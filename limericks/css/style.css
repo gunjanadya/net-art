@@ -1,22 +1,22 @@
-.body{
+body{
     background-color: #fda2c8;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-.h1{
+h1{
     font-style: italic;
     padding-top:10px
 }
-.p{
+p{
     font-size: 45px;
 }
-.title{
+title{
     font-weight: bold;
 }
-#thneed{
+#theend{
     color:aquamarine;
 }
-.div{
+div{
     padding: 50px;
     margin: 80px;
     border: 10px solid black;
