@@ -1,0 +1,49 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    outline: 2px dashed green;
+}
+.pink {
+    background-color:rgb(255, 152, 198);
+    width:10%;
+    height:100px;
+    float:left;
+}
+  
+ .red {
+    background-color:rgb(255, 126, 126);
+    width:10%;
+    height:100px;
+    float:left;
+}
+  
+.orange {
+    background-color:rgb(255, 200, 97);
+    width:10%;
+    height:100px;
+    float:left;
+}
+.yellow {
+    background-color:rgb(251, 251, 157);
+    width:10%;
+    height:100px;
+    float:left;
+}
+.green {
+    background-color:lightgreen;
+    width:10%;
+    height:100px;
+    float:left;
+}
+.blue {
+    background-color:lightblue;
+    width:10%;
+    height:100px;
+    float:left;
+}
+.purple {
+    background-color:plum;
+    width:10%;
+    height:100px;
+    float:left;
+}
