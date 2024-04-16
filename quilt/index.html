@@ -128,4 +128,40 @@
         <div class="red"></div>
     </div>
 </body>
+
+<script>
+
+    // colors to cycle through
+    let colors = [
+        'rgb(255, 126, 126)', // red
+        'rgb(255, 200, 97)',  // orange
+        'rgb(251, 251, 157)', // yellow
+        'lightgreen',         // green
+        'lightblue',          // blue
+        'plum',               // purple
+        'rgb(255, 152, 198)'  // pink
+    ];
+
+    // listen for click
+    let divs = document.querySelectorAll('.red, .orange, .yellow, .green, .blue, .purple, .pink');
+    divs.forEach(div => {
+        div.addEventListener('click', function() {
+            changeColor(this);
+        });
+    });
+
+    // go to next color function
+    function changeColor(element) {
+        let computedStyle = window.getComputedStyle(element);
+        let currentColor = computedStyle.backgroundColor;
+        let index = colors.indexOf(currentColor);
+        if(index < 6){
+            index++;
+        }else{
+            index = 0;
+        }
+        element.style.backgroundColor = colors[index];
+    }
+</script>
+
 </html>
