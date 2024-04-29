@@ -133,13 +133,14 @@
 
     // colors to cycle through
     let colors = [
-        'rgb(255, 126, 126)', // red
-        'rgb(255, 200, 97)',  // orange
-        'rgb(251, 251, 157)', // yellow
-        'lightgreen',         // green
-        'lightblue',          // blue
-        'plum',               // purple
-        'rgb(255, 152, 198)'  // pink
+        'rgb(255, 152, 198)', // pink    - 0
+        'rgb(255, 126, 126)', // red     - 1
+        'rgb(255, 200, 97)',  // orange  - 2
+        'rgb(251, 251, 157)', // yellow  - 3
+        'rgb(144, 238, 144)', // green   - 4
+        'rgb(173, 216, 230)', // blue    - 5
+        'rgb(221, 160, 221)', // purple  - 6 
+        'rgb(255, 255, 255)'  // white   - 7
     ];
 
     // listen for click
@@ -155,7 +156,7 @@
         let computedStyle = window.getComputedStyle(element);
         let currentColor = computedStyle.backgroundColor;
         let index = colors.indexOf(currentColor);
-        if(index < 6){
+        if(index < 7){
             index++;
         }else{
             index = 0;
